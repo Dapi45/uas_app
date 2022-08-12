@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:ionicons/ionicons.dart';
 import 'package:uas_app/app/utils/style/AppColors.dart';
 import 'package:uas_app/app/utils/widget/header.dart';
 import 'package:uas_app/app/utils/widget/sidebar.dart';
 
-import '../../../routes/app_pages.dart';
 import '../../../utils/widget/myfriends.dart';
 import '../../../utils/widget/Study.dart';
-import '../../../utils/widget/search.dart';
 import '../../../utils/widget/task.dart';
 import '../controllers/home_controller.dart';
 
@@ -59,7 +56,14 @@ class HomeView extends GetView<HomeController> {
                                     ],
                                   ),
                                 )
-                              : const Study(),
+                              : Expanded(
+                                  child: Column(
+                                    children: const [
+                                      Study(),
+                                      Task(),
+                                    ],
+                                  ),
+                                ),
                         ],
                       ),
                     ),

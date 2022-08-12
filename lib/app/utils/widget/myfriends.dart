@@ -21,7 +21,7 @@ class MyFriend extends StatelessWidget {
               Row(
                 children: [
                   const Text(
-                    'My Friends',
+                    'Teman',
                     style:
                         TextStyle(color: AppColors.primaryText, fontSize: 25),
                   ),
@@ -30,7 +30,7 @@ class MyFriend extends StatelessWidget {
                       ? GestureDetector(
                           onTap: () => Get.toNamed(Routes.FRIENDS),
                           child: const Text(
-                            'more',
+                            'lainnya',
                             style: TextStyle(
                                 color: AppColors.primaryText, fontSize: 20),
                           ),

@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
 
-import '../../../routes/app_pages.dart';
 import '../../../utils/style/AppColors.dart';
 import '../../../utils/widget/header.dart';
-import '../../../utils/widget/search.dart';
 import '../../../utils/widget/sidebar.dart';
 import '../../../utils/widget/task.dart';
 import '../controllers/task_controller.dart';
@@ -46,16 +44,8 @@ class TaskView extends GetView<TaskController> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          !context.isPhone
-                              ? Expanded(
-                                  child: Row(
-                                    children: const [
-                                      Task(),
-                                    ],
-                                  ),
-                                )
-                              : const Task(),
+                        children: const [
+                          Task(),
                         ],
                       ),
                     ),
@@ -64,6 +54,97 @@ class TaskView extends GetView<TaskController> {
               ),
             ),
           ],
+        ),
+      ),
+      floatingActionButton: Align(
+        alignment: const Alignment(0.95, 0.95),
+        child: FloatingActionButton.extended(
+          onPressed: () {
+            Get.bottomSheet(
+              SingleChildScrollView(
+                child: Container(
+                  padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
+                  margin: context.isPhone
+                      ? EdgeInsets.zero
+                      : const EdgeInsets.only(left: 100, right: 100),
+                  decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                      ),
+                      color: AppColors.cardBg),
+                  child: Form(
+                    child: Column(
+                      children: [
+                        const Text(
+                          'Tambah Tugas',
+                          style: TextStyle(
+                            color: AppColors.primaryText,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        TextFormField(
+                          decoration: InputDecoration(
+                            hintText: 'Judul',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          validator: (value) {
+                            if (value == null) {
+                              return 'Harap isi terlebih dahulu';
+                            }
+                            return null;
+                          },
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        TextFormField(
+                          keyboardType: TextInputType.multiline,
+                          maxLines: 10,
+                          decoration: InputDecoration(
+                            hintText: 'Deskripsi',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          validator: (value) {
+                            if (value == null) {
+                              return 'Harap isi terlebih dahulu';
+                            }
+                            return null;
+                          },
+                        ),
+                        const SizedBox(
+                          height: 9,
+                        ),
+                        ConstrainedBox(
+                          constraints: BoxConstraints.tightFor(
+                            width: Get.width,
+                            height: 40,
+                          ),
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: const Text('Tambah'),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+          label: const Text('Tambah Tugas'),
+          icon: const Icon(Ionicons.add_circle),
         ),
       ),
     );

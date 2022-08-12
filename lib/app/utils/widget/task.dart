@@ -13,7 +13,7 @@ class Task extends StatelessWidget {
     return Expanded(
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(0.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -21,22 +21,24 @@ class Task extends StatelessWidget {
               Row(
                 children: const [
                   Text(
-                    'Weekly tasks',
+                    'Tugas Mingguan',
                     style:
                         TextStyle(color: AppColors.primaryText, fontSize: 25),
                   ),
-                  Spacer(),
                 ],
               ),
+              const SizedBox(
+                height: 12,
+              ),
               SizedBox(
-                height: Get.height * 0.69,
+                height: context.isPhone ? Get.height * 0.34 : Get.height * 0.69,
                 child: ListView(
                   clipBehavior: Clip.antiAlias,
                   // scrollDirection: Axis.vertical,
                   shrinkWrap: true,
                   children: [
                     Container(
-                      height: 200,
+                      height: 220,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: AppColors.cardBg,
@@ -88,7 +90,7 @@ class Task extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 200,
+                      height: 220,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: AppColors.cardBg,
@@ -140,7 +142,7 @@ class Task extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 200,
+                      height: 220,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: AppColors.cardBg,
