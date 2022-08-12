@@ -17,10 +17,9 @@ class ProfileWidget extends StatelessWidget {
                   flex: 1,
                   child: ClipRRect(
                     child: CircleAvatar(
-                      backgroundColor: Colors.grey,
+                      backgroundImage: AssetImage('assets/icons/profile.png'),
                       radius: 150,
-                      foregroundImage: NetworkImage(
-                          'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
+                      foregroundImage: AssetImage('assets/icons/profile.png'),
                     ),
                   ),
                 ),
@@ -53,10 +52,9 @@ class ProfileWidget extends StatelessWidget {
                   ),
                   ClipRRect(
                     child: CircleAvatar(
-                      backgroundColor: Colors.grey,
+                      backgroundImage: AssetImage('assets/icons/profile.png'),
                       radius: 100,
-                      foregroundImage: NetworkImage(
-                          'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
+                      foregroundImage: AssetImage('assets/icons/profile.png'),
                     ),
                   ),
                   SizedBox(

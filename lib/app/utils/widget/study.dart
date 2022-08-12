@@ -59,8 +59,8 @@ class Study extends StatelessWidget {
                                 child: const CircleAvatar(
                                   backgroundColor: Colors.grey,
                                   radius: 20,
-                                  foregroundImage: NetworkImage(
-                                      'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
+                                  foregroundImage:
+                                      AssetImage('assets/icons/profile.png'),
                                 ),
                               ),
                               const SizedBox(
@@ -111,8 +111,8 @@ class Study extends StatelessWidget {
                                 child: const CircleAvatar(
                                   backgroundColor: Colors.grey,
                                   radius: 20,
-                                  foregroundImage: NetworkImage(
-                                      'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
+                                  foregroundImage:
+                                      AssetImage('assets/icons/profile.png'),
                                 ),
                               ),
                               const SizedBox(
@@ -163,8 +163,8 @@ class Study extends StatelessWidget {
                                 child: const CircleAvatar(
                                   backgroundColor: Colors.grey,
                                   radius: 20,
-                                  foregroundImage: NetworkImage(
-                                      'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
+                                  foregroundImage:
+                                      AssetImage('assets/icons/profile.png'),
                                 ),
                               ),
                               const SizedBox(

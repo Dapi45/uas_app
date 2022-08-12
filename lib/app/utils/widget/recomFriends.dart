@@ -23,9 +23,7 @@ class recomFriends extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(50),
                   child: const Image(
-                    image: NetworkImage(
-                      'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png',
-                    ),
+                    image: AssetImage('assets/icons/profile.png'),
                   ),
                 ),
                 const Positioned(

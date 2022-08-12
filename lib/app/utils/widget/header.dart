@@ -39,7 +39,7 @@ class header extends StatelessWidget {
                 'Study online',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Color.fromARGB(255, 129, 53, 53),
+                  color: AppColors.primaryText,
                 ),
               ),
               Text(
@@ -73,8 +73,7 @@ class header extends StatelessWidget {
               child: const CircleAvatar(
                 backgroundColor: Colors.grey,
                 radius: 25,
-                foregroundImage: NetworkImage(
-                    'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
+                foregroundImage: AssetImage('assets/icons/profile.png'),
               ),
             ),
           ),
