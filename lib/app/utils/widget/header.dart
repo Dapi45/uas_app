@@ -54,7 +54,7 @@ class header extends StatelessWidget {
           const Spacer(
             flex: 1,
           ),
-          search(),
+          !context.isPhone ? const search() : const SizedBox(),
           const SizedBox(
             width: 15,
           ),
@@ -73,7 +73,8 @@ class header extends StatelessWidget {
               child: const CircleAvatar(
                 backgroundColor: Colors.grey,
                 radius: 25,
-                foregroundImage: NetworkImage('assets/icons/profile.png'),
+                foregroundImage: NetworkImage(
+                    'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
               ),
             ),
           ),

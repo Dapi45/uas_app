@@ -39,7 +39,7 @@ class TaskView extends GetView<TaskController> {
                         color: Colors.white,
                         borderRadius: !context.isPhone
                             ? BorderRadius.circular(50)
-                            : BorderRadius.circular(30),
+                            : BorderRadius.circular(0),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -106,7 +106,7 @@ class TaskView extends GetView<TaskController> {
                         ),
                         TextFormField(
                           keyboardType: TextInputType.multiline,
-                          maxLines: 10,
+                          maxLines: 6,
                           decoration: InputDecoration(
                             hintText: 'Deskripsi',
                             border: OutlineInputBorder(

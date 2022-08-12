@@ -39,23 +39,25 @@ class FriendsView extends GetView<FriendsController> {
                         color: Colors.white,
                         borderRadius: !context.isPhone
                             ? BorderRadius.circular(50)
-                            : BorderRadius.circular(30),
+                            : BorderRadius.circular(0),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text(
-                            'People You May Know',
+                        children: [
+                          const Text(
+                            'Rekomendasi Teman',
                             style: TextStyle(
                               fontSize: 25,
                               color: AppColors.primaryText,
                             ),
                           ),
-                          recomFriends(),
-                          SizedBox(
-                            height: 50,
-                          ),
-                          MyFriend()
+                          const recomFriends(),
+                          !context.isPhone
+                              ? const SizedBox(
+                                  height: 50,
+                                )
+                              : const SizedBox(),
+                          const MyFriend()
                         ],
                       ),
                     ),

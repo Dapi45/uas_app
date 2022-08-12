@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:uas_app/app/utils/widget/myfriends.dart';
 
 import '../../../routes/app_pages.dart';
 import '../../../utils/style/AppColors.dart';
-import '../../../utils/widget/header.dart';
 import '../../../utils/widget/profilewidget.dart';
 import '../../../utils/widget/search.dart';
 import '../../../utils/widget/sidebar.dart';
@@ -66,7 +64,7 @@ class ProfileView extends GetView<ProfileController> {
                         const Spacer(
                           flex: 1,
                         ),
-                        search(),
+                        !context.isPhone ? const search() : const SizedBox(),
                         const SizedBox(
                           width: 15,
                         ),
@@ -122,7 +120,7 @@ class ProfileView extends GetView<ProfileController> {
                         color: Colors.white,
                         borderRadius: !context.isPhone
                             ? BorderRadius.circular(50)
-                            : BorderRadius.circular(30),
+                            : BorderRadius.circular(0),
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -132,10 +130,6 @@ class ProfileView extends GetView<ProfileController> {
                           SizedBox(
                             height: 20,
                           ),
-                          // SizedBox(
-                          //   height: Get.height * 0.25, // 200,
-                          //   child: const MyFriend(),
-                          // ),
                         ],
                       ),
                     ),

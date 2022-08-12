@@ -19,7 +19,8 @@ class ProfileWidget extends StatelessWidget {
                     child: CircleAvatar(
                       backgroundColor: Colors.grey,
                       radius: 150,
-                      foregroundImage: NetworkImage('assets/icons/profile.png'),
+                      foregroundImage: NetworkImage(
+                          'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
                     ),
                   ),
                 ),
@@ -54,7 +55,8 @@ class ProfileWidget extends StatelessWidget {
                     child: CircleAvatar(
                       backgroundColor: Colors.grey,
                       radius: 100,
-                      foregroundImage: NetworkImage('assets/icons/profile.png'),
+                      foregroundImage: NetworkImage(
+                          'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
                     ),
                   ),
                   SizedBox(

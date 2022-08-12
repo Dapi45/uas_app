@@ -63,7 +63,7 @@ class MyFriend extends StatelessWidget {
                               ? 5
                               : 2,
                       crossAxisSpacing: 20,
-                      mainAxisSpacing: 0),
+                      mainAxisSpacing: 10),
                   itemBuilder: (context, index) {
                     return Column(
                       children: [
@@ -71,18 +71,18 @@ class MyFriend extends StatelessWidget {
                           borderRadius: BorderRadius.circular(100),
                           child: const Image(
                             image: NetworkImage(
-                              'assets/icons/profile.png',
+                              'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png',
                             ),
-                            width: 135,
+                            width: 120,
                           ),
                         ),
                         const SizedBox(
-                          height: 10,
-                        ),
-                        const Text(
-                          'user',
-                          style: TextStyle(
-                              color: AppColors.primaryText, fontSize: 20),
+                          height: 30,
+                          child: Text(
+                            'user',
+                            style: TextStyle(
+                                color: AppColors.primaryText, fontSize: 20),
+                          ),
                         ),
                       ],
                     );

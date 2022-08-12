@@ -86,7 +86,9 @@ class LoginView extends GetView<LoginController> {
                             ),
                       Icon(
                         Ionicons.book,
-                        size: Get.height * 0.4,
+                        size: context.isPhone
+                            ? Get.height * 0.3
+                            : Get.height * 0.4,
                         color: Colors.green,
                       ),
                       FloatingActionButton.extended(

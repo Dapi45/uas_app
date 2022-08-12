@@ -24,7 +24,7 @@ class recomFriends extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                   child: const Image(
                     image: NetworkImage(
-                      'assets/icons/profile.png',
+                      'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png',
                     ),
                   ),
                 ),

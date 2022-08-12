@@ -27,18 +27,22 @@ class Study extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 12,
+              SizedBox(
+                height: context.isPhone ? 0 : 10,
               ),
               SizedBox(
-                height: context.isPhone ? Get.height * 0.34 : Get.height * 0.69,
+                height: Get.currentRoute == '/class'
+                    ? Get.height * 0.69
+                    : context.isPhone
+                        ? Get.height * 0.34
+                        : Get.height * 0.69,
                 child: ListView(
                   clipBehavior: Clip.antiAlias,
                   // scrollDirection: Axis.vertical,
                   shrinkWrap: true,
                   children: [
                     Container(
-                      height: 220,
+                      height: 200,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: AppColors.cardBg,
@@ -55,8 +59,8 @@ class Study extends StatelessWidget {
                                 child: const CircleAvatar(
                                   backgroundColor: Colors.grey,
                                   radius: 20,
-                                  foregroundImage:
-                                      NetworkImage('assets/icons/profile.png'),
+                                  foregroundImage: NetworkImage(
+                                      'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
                                 ),
                               ),
                               const SizedBox(
@@ -90,7 +94,7 @@ class Study extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 220,
+                      height: 200,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: AppColors.cardBg,
@@ -107,8 +111,8 @@ class Study extends StatelessWidget {
                                 child: const CircleAvatar(
                                   backgroundColor: Colors.grey,
                                   radius: 20,
-                                  foregroundImage:
-                                      NetworkImage('assets/icons/profile.png'),
+                                  foregroundImage: NetworkImage(
+                                      'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
                                 ),
                               ),
                               const SizedBox(
@@ -142,7 +146,7 @@ class Study extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 220,
+                      height: 200,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: AppColors.cardBg,
@@ -159,8 +163,8 @@ class Study extends StatelessWidget {
                                 child: const CircleAvatar(
                                   backgroundColor: Colors.grey,
                                   radius: 20,
-                                  foregroundImage:
-                                      NetworkImage('assets/icons/profile.png'),
+                                  foregroundImage: NetworkImage(
+                                      'https://cdn.discordapp.com/attachments/956457874962391081/1007470517508374588/unknown.png'),
                                 ),
                               ),
                               const SizedBox(
