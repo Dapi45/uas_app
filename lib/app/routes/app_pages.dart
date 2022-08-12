@@ -29,9 +29,9 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.LOGIN,
-      page: () => const LoginView(),
+      page: () => LoginView(),
       binding: LoginBinding(),
-      transition: Transition.native,
+      transition: Transition.upToDown,
     ),
     GetPage(
       name: _Paths.FRIENDS,
@@ -49,11 +49,13 @@ class AppPages {
       name: _Paths.CLASS,
       page: () => ClassView(),
       binding: ClassBinding(),
+      transition: Transition.upToDown,
     ),
     GetPage(
       name: _Paths.TASK,
       page: () => TaskView(),
       binding: TaskBinding(),
+      transition: Transition.upToDown,
     ),
   ];
 }

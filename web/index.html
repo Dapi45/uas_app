@@ -31,15 +31,43 @@
 
   <title>uas_app</title>
   <link rel="manifest" href="manifest.json">
-
+  
   <script>
     // The value below is injected by flutter build, do not touch.
     var serviceWorkerVersion = null;
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <meta name="google-signin-client_id" content="750574663042-40ncu7h7td8gleksfgrjhd15osqeg8ik.apps.googleusercontent.com">
 </head>
 <body>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    
+    // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+    // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCsAITujPdyI_TEqFIlye2vOyG7gqZS9sc",
+      authDomain: "studyonline-uasmp04.firebaseapp.com",
+      projectId: "studyonline-uasmp04",
+      storageBucket: "studyonline-uasmp04.appspot.com",
+      messagingSenderId: "750574663042",
+      appId: "1:750574663042:web:ed9420d9336f5db1638b9b",
+      measurementId: "G-205XCZSSDY"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js

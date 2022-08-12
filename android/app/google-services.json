@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "750574663042",
+    "project_id": "studyonline-uasmp04",
+    "storage_bucket": "studyonline-uasmp04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750574663042:android:55ae30bccc100e68638b9b",
+        "android_client_info": {
+          "package_name": "com.example.uas_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750574663042-b4n09496gv7oe145s7cm6ruuu3l4p9g5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uas_app",
+            "certificate_hash": "183f76e682b41cd1405f73734f70072cc12c9467"
+          }
+        },
+        {
+          "client_id": "750574663042-smi0ffj4cnesllk1jsvp13i4n8hbv9oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArDQ5A35Yoiw6YqhPInjJpdKKMQKxRRL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750574663042-smi0ffj4cnesllk1jsvp13i4n8hbv9oh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
