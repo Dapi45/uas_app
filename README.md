@@ -1,16 +1,12 @@
-# uas_app
+# UAS Mobile Programming
+<p>Project ini bertujuan untuk memenuhi Ujian Akhir Semester 4 Mobile Programming Teknik Informatika Intelligence System UCIC<br>
+  <a href="https://studyonline-uasmp04.web.app/"><button>Link Hosting</button></a>
+</p>
 
-A new Flutter project.
+## Kelompok
+<p><a href="https://github.com/Dapi45">Daffi Fadillah</a> - 200200120030<br><a href="https://github.com/penaa9">Trivena Natalia Gunawan</a> - 20200120055</p>
 
-## Getting Started
+## Keterangan
+<p>Karena beberapa alasan, sebagian fitur belum berfungsi sebagaimana mestinya dan akan diupdate secepatnya 🙏</p>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
