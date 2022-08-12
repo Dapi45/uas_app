@@ -48,40 +48,46 @@ class MyFriend extends StatelessWidget {
                 height: 12,
               ),
               SizedBox(
-                height: context.isPhone ? 200 : 500,
+                height: context.isPhone
+                    ? 200
+                    : Get.currentRoute == '/friends'
+                        ? Get.height * 0.29
+                        : Get.height * 0.69,
                 child: GridView.builder(
-                    shrinkWrap: true,
-                    itemCount: 8,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: context.isPhone
-                            ? 2
-                            : Get.currentRoute == '/friends'
-                                ? 5
-                                : 3,
-                        crossAxisSpacing: 20,
-                        mainAxisSpacing: 0),
-                    itemBuilder: (context, index) {
-                      return Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(100),
-                            child: const Image(
-                              image: NetworkImage(
-                                'assets/icons/profile.png',
-                              ),
-                              width: 135,
+                  shrinkWrap: true,
+                  itemCount: 8,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: context.isPhone
+                          ? 2
+                          : Get.currentRoute == '/friends'
+                              ? 5
+                              : 2,
+                      crossAxisSpacing: 20,
+                      mainAxisSpacing: 0),
+                  itemBuilder: (context, index) {
+                    return Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(100),
+                          child: const Image(
+                            image: NetworkImage(
+                              'assets/icons/profile.png',
                             ),
+                            width: 135,
                           ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          const Text(
-                            'user',
-                            style: TextStyle(color: AppColors.primaryText),
-                          ),
-                        ],
-                      );
-                    }),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const Text(
+                          'user',
+                          style: TextStyle(
+                              color: AppColors.primaryText, fontSize: 20),
+                        ),
+                      ],
+                    );
+                  },
+                ),
               ),
             ],
           ),

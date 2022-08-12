@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 import '../style/AppColors.dart';
 
-class Study extends StatelessWidget {
-  const Study({
+class Task extends StatelessWidget {
+  const Task({
     Key? key,
   }) : super(key: key);
 
@@ -21,7 +21,7 @@ class Study extends StatelessWidget {
               Row(
                 children: const [
                   Text(
-                    'Study Class',
+                    'Weekly tasks',
                     style:
                         TextStyle(color: AppColors.primaryText, fontSize: 25),
                   ),
@@ -51,7 +51,7 @@ class Study extends StatelessWidget {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(25),
                                 child: const CircleAvatar(
-                                  backgroundColor: Colors.grey,
+                                  backgroundColor: Colors.amber,
                                   radius: 20,
                                   foregroundImage:
                                       NetworkImage('assets/icons/profile.png'),
@@ -80,7 +80,7 @@ class Study extends StatelessWidget {
                             height: 5,
                           ),
                           const Text(
-                            'Mempelajari bahasa pemrograman Flutter',
+                            'Tugas Task Management',
                             style: TextStyle(
                                 color: AppColors.primaryText, fontSize: 15),
                           )
@@ -103,7 +103,7 @@ class Study extends StatelessWidget {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(25),
                                 child: const CircleAvatar(
-                                  backgroundColor: Colors.grey,
+                                  backgroundColor: Colors.amber,
                                   radius: 20,
                                   foregroundImage:
                                       NetworkImage('assets/icons/profile.png'),
@@ -132,7 +132,7 @@ class Study extends StatelessWidget {
                             height: 5,
                           ),
                           const Text(
-                            'Mempelajari bahasa pemrograman Python',
+                            'Tugas Praktikum OpenCV',
                             style: TextStyle(
                                 color: AppColors.primaryText, fontSize: 15),
                           )
@@ -155,7 +155,7 @@ class Study extends StatelessWidget {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(25),
                                 child: const CircleAvatar(
-                                  backgroundColor: Colors.grey,
+                                  backgroundColor: Colors.amber,
                                   radius: 20,
                                   foregroundImage:
                                       NetworkImage('assets/icons/profile.png'),
@@ -184,7 +184,7 @@ class Study extends StatelessWidget {
                             height: 5,
                           ),
                           const Text(
-                            'Mempelajari rangkaian komputer menggunakan Digital Works',
+                            'Tugas Praktikum Rangkaian Digiytal',
                             style: TextStyle(
                                 color: AppColors.primaryText, fontSize: 15),
                           )

@@ -81,6 +81,78 @@ class SideBar extends StatelessWidget {
                         Container(
                           height: 40,
                           width: 100,
+                          decoration: Get.currentRoute == '/class'
+                              ? BoxDecoration(
+                                  borderRadius: BorderRadius.circular(40),
+                                  color: Colors.white)
+                              : const BoxDecoration(),
+                          child: Icon(
+                            Get.currentRoute == '/class'
+                                ? Ionicons.document
+                                : Ionicons.document_outline,
+                            color: AppColors.primaryText,
+                            size: 30,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Text(
+                          'Class',
+                          style: TextStyle(
+                              color: AppColors.primaryText, fontSize: 16),
+                        ),
+                      ],
+                    ),
+                    onTap: () => Get.toNamed(Routes.CLASS),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 100,
+                child: Center(
+                  child: InkWell(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 40,
+                          width: 100,
+                          decoration: Get.currentRoute == '/task'
+                              ? BoxDecoration(
+                                  borderRadius: BorderRadius.circular(40),
+                                  color: Colors.white)
+                              : const BoxDecoration(),
+                          child: Icon(
+                            Get.currentRoute == '/task'
+                                ? Ionicons.bookmark
+                                : Ionicons.bookmark_outline,
+                            color: AppColors.primaryText,
+                            size: 30,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        const Text(
+                          'Task',
+                          style: TextStyle(
+                              color: AppColors.primaryText, fontSize: 16),
+                        ),
+                      ],
+                    ),
+                    onTap: () => Get.toNamed(Routes.TASK),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 100,
+                child: Center(
+                  child: InkWell(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 40,
+                          width: 100,
                           decoration: Get.currentRoute == '/friends'
                               ? BoxDecoration(
                                   borderRadius: BorderRadius.circular(40),

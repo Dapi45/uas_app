@@ -2,18 +2,16 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:uas_app/app/utils/style/AppColors.dart';
-import 'package:uas_app/app/utils/widget/header.dart';
-import 'package:uas_app/app/utils/widget/sidebar.dart';
+import 'package:uas_app/app/utils/widget/study.dart';
 
 import '../../../routes/app_pages.dart';
-import '../../../utils/widget/myfriends.dart';
-import '../../../utils/widget/Study.dart';
+import '../../../utils/style/AppColors.dart';
+import '../../../utils/widget/header.dart';
 import '../../../utils/widget/search.dart';
-import '../../../utils/widget/task.dart';
-import '../controllers/home_controller.dart';
+import '../../../utils/widget/sidebar.dart';
+import '../controllers/class_controller.dart';
 
-class HomeView extends GetView<HomeController> {
+class ClassView extends GetView<ClassController> {
   final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
 
   @override
@@ -54,8 +52,6 @@ class HomeView extends GetView<HomeController> {
                                   child: Row(
                                     children: const [
                                       Study(),
-                                      Task(),
-                                      MyFriend(),
                                     ],
                                   ),
                                 )
