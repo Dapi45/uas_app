@@ -6,7 +6,6 @@
 ## Kelompok
 <p><a href="https://github.com/Dapi45">Daffi Fadillah</a> - 200200120030<br><a href="https://github.com/penaa9">Trivena Natalia Gunawan</a> - 20200120055</p>
 
-## Keterangan
-<p>Karena beberapa alasan, sebagian fitur belum berfungsi sebagaimana mestinya dan akan diupdate secepatnya 🙏</p>
+
 
 
